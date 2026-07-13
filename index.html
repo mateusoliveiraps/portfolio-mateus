@@ -267,6 +267,37 @@
       background:
         radial-gradient(circle at 85% 15%, rgba(45,212,191,0.09), transparent 45%),
         var(--surface);
+    }
+    .browser-frame {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 2.2rem;
+      background: var(--surface-2);
+    }
+    .browser-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.6rem 0.9rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .browser-bar span {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: rgba(249, 250, 251, 0.15);
+    }
+    .browser-bar span:first-child { background: rgba(45, 212, 191, 0.55); }
+    .browser-bar em {
+      font-style: normal;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-left: 0.6rem;
+      font-family: var(--font-display);
+    }
+    .browser-frame img { display: block; width: 100%; height: auto; }
+    .case-body {
       display: grid;
       grid-template-columns: 1.4fr 1fr;
       gap: 2rem;
@@ -441,7 +472,7 @@
       .dores, .servicos-grid { grid-template-columns: 1fr; }
       .dor:nth-child(n), .servico:nth-child(n) { grid-column: auto; }
       .dor:nth-child(3) { flex-direction: column; gap: 0.4rem; }
-      .case-card { grid-template-columns: 1fr; }
+      .case-body { grid-template-columns: 1fr; }
       .case-meta { border-left: none; border-top: 1px solid var(--border); padding-left: 0; padding-top: 1.6rem; }
       .etapas { grid-template-columns: 1fr 1fr; gap: 1.6rem 1rem; }
       .sobre-inner { grid-template-columns: 1fr; gap: 2rem; }
@@ -543,6 +574,11 @@
         <p class="kicker fade-in">Projeto no ar</p>
         <h2 class="section-title fade-in">Quem já confiou</h2>
         <div class="case-card fade-in">
+          <div class="browser-frame">
+            <div class="browser-bar"><span></span><span></span><span></span><em>camilasemioni.vercel.app</em></div>
+            <img src="camila-preview.jpg" alt="Site da fonoaudióloga Camila Semioni: hero com a headline 'Cuidando da comunicação em todas as fases da vida' e botões de agendamento" loading="lazy">
+          </div>
+          <div class="case-body">
           <div>
             <h3>Camila Semioni — Fonoaudióloga</h3>
             <p>Site profissional para clínica de fonoaudiologia em Joaçaba/SC: presença digital completa para pacientes encontrarem, conhecerem e agendarem com confiança.</p>
@@ -552,6 +588,7 @@
             <div><strong>Segmento</strong><span>Clínica de saúde</span></div>
             <div><strong>Entrega</strong><span>Site profissional completo</span></div>
             <div><strong>Status</strong><span>No ar desde 2026</span></div>
+          </div>
           </div>
         </div>
       </div>
