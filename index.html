@@ -259,8 +259,13 @@
     .servico p { color: var(--text-dim); font-size: 0.98rem; }
 
     /* ---------- CASE ---------- */
-    .case-card {
+    .cases-list {
       margin-top: 3.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+    .case-card {
       border: 1px solid var(--border);
       border-radius: 18px;
       padding: clamp(1.8rem, 4vw, 3rem);
@@ -596,22 +601,43 @@
       <div class="wrap">
         <p class="kicker fade-in">Projeto no ar</p>
         <h2 class="section-title fade-in">Quem já confiou</h2>
-        <div class="case-card fade-in">
-          <div class="browser-frame">
-            <div class="browser-bar"><span></span><span></span><span></span><em>camilasemioni.vercel.app</em></div>
-            <img src="camila-preview.jpg" alt="Site da fonoaudióloga Camila Semioni: hero com a headline 'Cuidando da comunicação em todas as fases da vida' e botões de agendamento" loading="lazy">
+        <div class="cases-list">
+          <div class="case-card fade-in">
+            <div class="browser-frame">
+              <div class="browser-bar"><span></span><span></span><span></span><em>camilasemioni.com.br</em></div>
+              <img src="camila-preview.jpg" alt="Site da fonoaudióloga Camila Semioni: hero com a headline 'Cuidando da comunicação em todas as fases da vida' e botões de agendamento" loading="lazy">
+            </div>
+            <div class="case-body">
+              <div>
+                <h3>Camila Semioni — Fonoaudióloga</h3>
+                <p>Site profissional para clínica de fonoaudiologia em Joaçaba/SC: presença digital completa para pacientes encontrarem, conhecerem e agendarem com confiança.</p>
+                <a class="case-link" href="https://camilasemioni.com.br/" target="_blank" rel="noopener">Visitar o site ao vivo →</a>
+              </div>
+              <div class="case-meta">
+                <div><strong>Segmento</strong><span>Clínica de saúde</span></div>
+                <div><strong>Entrega</strong><span>Site profissional completo</span></div>
+                <div><strong>Status</strong><span>No ar desde 2026</span></div>
+              </div>
+            </div>
           </div>
-          <div class="case-body">
-          <div>
-            <h3>Camila Semioni — Fonoaudióloga</h3>
-            <p>Site profissional para clínica de fonoaudiologia em Joaçaba/SC: presença digital completa para pacientes encontrarem, conhecerem e agendarem com confiança.</p>
-            <a class="case-link" href="https://camilasemioni.vercel.app/" target="_blank" rel="noopener">Visitar o site ao vivo →</a>
-          </div>
-          <div class="case-meta">
-            <div><strong>Segmento</strong><span>Clínica de saúde</span></div>
-            <div><strong>Entrega</strong><span>Site profissional completo</span></div>
-            <div><strong>Status</strong><span>No ar desde 2026</span></div>
-          </div>
+
+          <div class="case-card fade-in">
+            <div class="browser-frame">
+              <div class="browser-bar"><span></span><span></span><span></span><em>qainspectly.com.br</em></div>
+              <img src="qainspectly-preview.jpg" alt="Tela inicial do QA Inspectly: headline 'Descubra problemas críticos no seu site em minutos' com dashboard de score de qualidade" loading="lazy">
+            </div>
+            <div class="case-body">
+              <div>
+                <h3>QA Inspectly — Auditoria de sites com IA</h3>
+                <p>Plataforma que analisa performance, SEO, acessibilidade e qualidade de qualquer site com auditorias automatizadas — relatórios visuais e ações concretas em minutos.</p>
+                <a class="case-link" href="https://qainspectly.com.br/" target="_blank" rel="noopener">Visitar o site ao vivo →</a>
+              </div>
+              <div class="case-meta">
+                <div><strong>Segmento</strong><span>SaaS / Qualidade de software</span></div>
+                <div><strong>Entrega</strong><span>Plataforma de auditoria automatizada</span></div>
+                <div><strong>Status</strong><span>No ar desde 2026</span></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
